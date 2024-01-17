@@ -318,7 +318,7 @@ main {
     .banner-content {
         padding: 2px;
         max-width: 100%;
-        height: auto;
+        
     }
 
     .form {
@@ -338,6 +338,7 @@ main {
 
     .tours-img{
         width: 100%;
+        height: auto;
         
     }
 
