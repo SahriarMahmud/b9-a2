@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Mulish:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 * {
-    /* font-family: 'Inter', sans-serif;
-font-family: 'Merriweather', serif; */
+     font-family: 'Inter', sans-serif;
+/* font-family: 'Merriweather', serif;  */
     font-family: 'Mulish', sans-serif;
     /* font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif; */
@@ -16,10 +16,11 @@ font-family: 'Work Sans', sans-serif; */
 }
 
 /* header section */
-header{
+header {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .head-sec {
     display: flex;
     justify-content: space-between;
@@ -54,6 +55,7 @@ header{
     color: #424247;
     text-decoration: none;
 }
+
 /* banner */
 .banner {
     background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
@@ -97,9 +99,9 @@ header{
 
 }
 
-main{
+main {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 /* tours */
@@ -119,12 +121,13 @@ main{
 .tours-container {
     display: flex;
     align-items: center;
-    margin: 100px 130px;
-    gap: 80px;
-    
+    /* margin: 100px 130px; */
+    gap: 40px;
+
 }
-.tours-body{
-    padding-left: 135px ;
+
+.tours-body {
+    padding-left: 9px;
     padding-right: 70px;
 }
 
@@ -134,9 +137,14 @@ main{
     font-size: 2.4rem;
 }
 
+.tours-img {
+    width: auto;
+}
+
 /* destination */
 .destination-container {
     text-align: center;
+    margin-top: 100px;
 }
 
 .row {
@@ -144,47 +152,124 @@ main{
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+}
 
+.destination-images {
+    margin-right: 14rem;
 
 }
 
 /* box section */
 
-.choose-container{
+.cards-container {
     text-align: center;
-    margin: 0 130px;
+    margin-top: 6.2rem;
 }
 
+.card {
+    color: #131318;
+    font-size: 1.6rem;
+    font-weight: 800;
 
+}
 
-#box-1 {
+.p-card {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.box1 {
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
+    border: 1px solid rgba(138, 77, 8, 0.2);
     background: rgba(251, 181, 99, 0.05);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 40px;
 }
 
-#box-2 {
+.box2 {
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
+    padding: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
-#box-3 {
+.box3 {
     border-radius: 16px;
-    border: 1px solid rgba(233, 68, 68, 0.20);
+    border: 2px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-    align-items: center;
-    grid-row: span ;
+    margin: 56px 250px 100px;
+    padding: 40px;
 }
 
 .grid-box {
     display: flex;
-    justify-content:center;
+    justify-content: space-around;
+    gap: 24px;
+    padding: 40px 40px;
+}
+
+.grid-box2 {
+    justify-content: center;
+    padding: 24px;
+}
+
+/* newsletter */
+.news-whole{
+    display: flex;
+    gap: 10px;
+}
+
+.news {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 120px 20px 60px;
+    justify-content: center;
+    text-align: center;
     
 }
-.grid-box2{
-    justify-content: center;
-    align-items: center;
+.btn-primary2{
+    border-radius: 4px;
+    background: #FF5400;
+    border-style: none;
+    color: #FFF;
+    padding: 14px 28px;
+    width: 210px;
+    height: 40px;
+
+}
+.img-eight{
+    border-radius: 16px;
+}
+.inpt2{
+    height: 40px;
+    width: 200px;
+}
+.inpt1{
+    height: 40px;
+    width: 200px;
+}
+.Svbadge{
+    border-radius: 8px;
+    background: #FF5400;
+    color: #fff;
+    width: 200px;
+    height: 100px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 260px;
+    left: 350px;
+    transform: rotate(-40deg) ;
+    
+}
+.footer{
+    text-align: center;
+    background-color: rgba(19, 19, 24, 0.05);
 }
 
 
@@ -194,7 +279,7 @@ main{
 @media screen and (max-width: 600px) {
     .head-sec {
         flex-direction: column;
-        padding: 50px;
+        padding: 10px;
     }
 
     .head-sec ul {
@@ -203,7 +288,7 @@ main{
 
     .banner-content {
         padding: 2px;
-        
+
     }
 
     .form {
@@ -213,5 +298,28 @@ main{
     .row {
         flex-direction: column;
         height: auto;
+    }
+
+    .tours-container {
+        flex-direction: column;
+
+    }
+
+    .tours-img{
+        width: auto;
+    }
+
+    .tours-body {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    .grid-box{
+        flex-direction: column;
+    }
+    .grid-box2{
+        flex-direction: column;
+    }
+    .news-whole{
+        flex-direction: column;
     }
 }
