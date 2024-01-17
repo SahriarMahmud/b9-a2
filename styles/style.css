@@ -285,6 +285,14 @@ main {
     .head-sec ul {
         flex-direction: column;
     }
+    body {
+        background-color: lightblue;
+    }
+
+    h2{
+        display: flex;
+        
+    }
 
     .banner-content {
         padding: 2px;
@@ -306,7 +314,8 @@ main {
     }
 
     .tours-img{
-        width: auto;
+        width: 100%;
+        height: auto;
     }
 
     .tours-body {
