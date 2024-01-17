@@ -86,7 +86,7 @@ font-family: 'Work Sans', sans-serif; */
     gap: 22px;
 
 }
-
+/* tours */
 .btn-primary   {
     border-radius: 8px;
     background: #FF5400;
@@ -94,12 +94,16 @@ font-family: 'Work Sans', sans-serif; */
     color: #FFF;
     padding: 14px 35px;
 }
+.read-more{
+    font-weight: 800;
+    font-size: 1.25rem;
+}
 
 .tours-container{
     display: flex;
     align-items: center;
     margin: 100px 130px;
-    gap: 50px;
+    gap: 80px;
 }
 
 .tours-title{
@@ -108,8 +112,21 @@ font-family: 'Work Sans', sans-serif; */
     font-size: 2.4rem;
 }
 
+/* destination */
+.destination-container{
+    text-align: center;
+}
+.row{
+    display:flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: 100px 130px;
+    
+}
 
 
+
+/* media query for mobile devices */
 
 @media screen and (max-width: 600px) {
     .head-sec{
@@ -119,6 +136,13 @@ font-family: 'Work Sans', sans-serif; */
         flex-direction: column;
     }
     .banner{
+        width: 90%;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
         width: 90%;
     }
 }
